@@ -1,28 +1,18 @@
-public class Player {
-String name;
-String skill;
 
+public abstract class Player implements Comparable<Player>{
+	
+	private String name;
+	public String getName() {
+		return name;
+	}
 
+	public void setName(String name) {
+		this.name = name;
+	}
 
-public Player(String name, String skill) {
-	super();
-	this.name = name;
-	this.skill = skill;
-}
-public String getName() {
-	return name;
-}
-public void setName(String name) {
-	this.name = name;
-}
-public String getSkill() {
-	return skill;
-}
-public void setSkill(String skill) {
-	this.skill = skill;
-}
-
-public String toString() {
-	return "name=" + name + ", skill=" + skill ;
-}
+	public Player(String name) {
+		super();
+		this.name = name;
+	}
+	
 }

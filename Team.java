@@ -18,7 +18,7 @@ public class Team {
 		this.name = name;
 		this.numberOfMatches = numberOfMatches;
 	}
-	@Override
+	
 	public String toString() {
 		return name + " - " + numberOfMatches;
 	}
